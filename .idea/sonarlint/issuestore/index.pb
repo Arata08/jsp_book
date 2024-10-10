@@ -1,0 +1,21 @@
+
+P
+ src/main/webapp/loginreader.html,a\7\a73aafb302df2e190d3ef699ccff9ff25cdc3d0d
+O
+src/main/webapp/adminLogin.html,7\6\769fa1286bdd984c0cd6bb421f73a9546c9bd03d
+Q
+!src/main/webapp/loginManager.html,5\1\51b5edf7b9523c94b8560052cd11e75733872f6e
+I
+src/main/webapp/index.jsp,8\e\8e6d3b70c9f5b02570779b0441540d45eceb0ded
+Y
+)src/main/java/admin/admin/AdminLogin.java,8\9\8906bab7fbe494bddffa4f6a284b575212d9ac9c
+V
+&src/main/java/admin/admin/RuleAdd.java,2\a\2a357229d2a1cb3c3c2efaa031333a739cb4afc4
+P
+ src/main/java/javabean/Base.java,a\d\ad3eab728a31b8dd321f031bb635add9bf5c51ee
+R
+"src/main/java/javabean/Common.java,8\f\8f1ab0a3e675e8fb5623c9911673b85801ec9184
+W
+'src/main/java/javabean/DBConstants.java,e\e\ee587fc01b69bcbf3ee2ae265252e8ed68ef4c4b
+Y
+)src/main/java/manage/AnnouncementAdd.java,7\7\7721f88a2f9be66f58d6cad1a00c80d32a26b69b

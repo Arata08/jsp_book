@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>借阅者请登录！</title>
+  <link href="layui/css/layui.css" rel="stylesheet">
+  <script src="layui/layui.js"></script>
+  <style>
+    button:hover{
+      background-color:#ffd6e7;
+    }
+    .bg{
+      background: url(public/image/4.jpg) no-repeat;
+      background-size:cover;
+    }
+    .layui-form{
+      margin: 15% 40%;
+    }
+  </style>
+</head>
+<body class="bg">
+<form class="layui-form" method="post" action="login-servlet">
+  <h1 align="center">读者登录</h1>
+  <div class="layui-form" lay-filter="filter-test-layer" style="margin: 16px;">
+    <div class="demo-login-container">
+      <div class="layui-form-item">
+        <div class="layui-input-wrap">
+          <div class="layui-input-prefix">
+            <i class="layui-icon layui-icon-username"></i>
+          </div>
+          <input type="text" name="user" value=""  placeholder="请输入账号" required="required" autocomplete="off" class="layui-input" lay-affix="clear">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <div class="layui-input-wrap">
+          <div class="layui-input-prefix">
+            <i class="layui-icon layui-icon-password"></i>
+          </div>
+          <input type="password" name="psw" value="" placeholder="请输入密码" required="required" autocomplete="off" class="layui-input" lay-affix="eye">
+        </div>
+      </div>
+      <div class="layui-form-item">
+        <a href="readerRegister.html" style="float: left; margin-top: 7px;">注册账号</a>
+        <a style="float: right; margin-top: 7px;" onclick = 'return confirm("请找管理员！");'>忘记密码？</a>
+      </div>
+      <div class="layui-form-item">
+        <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-login">登录</button>
+      </div>
+    </div>
+  </div>
+</form>
+</body>
+</html>

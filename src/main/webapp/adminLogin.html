@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>图书管理员登录页面</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<link href="layui/css/layui.css" rel="stylesheet">
+	<script src="layui/layui.js"></script>
+	<style>
+		.demo-login-container{width: 320px; margin: 21px auto 0;}
+		.demo-login-other .layui-icon{position: relative; display: inline-block; margin: 0 2px; top: 2px; font-size: 26px;}
+		button:hover{
+			background-color:#ffd6e7;
+		}
+		.bg{
+			background: url(public/image/4.jpg) no-repeat;
+			background-size:cover;
+		}
+		.layui-form{
+			margin: 15% 40%;
+		}
+	</style>
+<body class="bg">
+<form class="layui-form">
+	<h2 align="center">管理员登录</h2>
+	<div class="demo-login-container">
+		<div class="layui-form-item">
+			<div class="layui-input-wrap">
+				<div class="layui-input-prefix">
+					<i class="layui-icon layui-icon-username"></i>
+				</div>
+				<input type="text" name="username" value="admin" required="required" placeholder="工号"
+					   autocomplete="off" class="layui-input">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<div class="layui-input-wrap">
+				<div class="layui-input-prefix">
+					<i class="layui-icon layui-icon-password"></i>
+				</div>
+				<input type="password" name="password" value="admin" required="required" placeholder="密   码"
+					   autocomplete="off" class="layui-input">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<input type="checkbox" name="remember" lay-skin="primary" title="记住密码">
+		</div>
+		<div class="layui-form-item">
+			<button class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-login">登录</button>
+		</div>
+	</div>
+</form>
+<div style="position:fixed; bottom:0; right:0;">
+	<a href="reader/01readerLogin.jsp" target="_blank" title="读者登录"><img src="public/image/reader.png"
+																			 width="100px" height="100px"></a><br>
+	<a href="loginManager.html" target="_blank" title="工作人员登录"><img src="public/image/admin.png" width="100px"
+																		height="100px"></a>
+</div>
+</body>
+<script>
+	layui.use(function(){
+		var form = layui.form;
+		var layer = layui.layer;
+		// 提交事件
+		form.on('submit(demo-login)', function(data){
+			$.ajax({
+				url: "./adminLogin",
+				type: "post",
+				data: $("form").serialize(),
+				dataType: "json",
+				success: function( data ){
+					if(data.code == 0){
+						layer.msg("登录成功", {
+							icon: 6,
+							time: 1000
+						}, function(){
+							location.href = data.url;
+						})
+					}else{
+						layer.open({
+							title: "登录失败",
+							content: data.msg,
+							icon: 5,
+							anim: 6
+						})
+					}
+				}
+			})
+			return false; // 阻止默认 form 跳转
+		});
+	});
+</script>

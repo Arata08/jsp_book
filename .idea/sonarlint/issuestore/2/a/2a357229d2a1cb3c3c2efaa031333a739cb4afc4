@@ -1,0 +1,15 @@
+
+f	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¥àò
+f	java:S117="QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›Çû£
+k	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßëääÿÿÿÿÿ
+k	java:S117?"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ð¿Æœýÿÿÿÿ
+2
+java:S16430"Use a StringBuilder instead.(“’Ëþ
+7
+java:S16433"Use a StringBuilder instead.(ææß³ÿÿÿÿÿ
+I
+java:S1481".Remove this unused "resultSet" local variable.(›÷Œœúÿÿÿÿ
+H
+java:S1905A"-Remove this unnecessary cast to "Connection".(Œ·þ—ÿÿÿÿÿ
+f
+java:S1989Y"PHandle the following exception that could be thrown by "getWriter": IOException.(¾šçÞ

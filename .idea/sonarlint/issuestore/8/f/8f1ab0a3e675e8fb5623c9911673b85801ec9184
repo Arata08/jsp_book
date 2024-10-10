@@ -1,0 +1,16 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(÷é£Ú
+
+java:S1319"sThe return type of this method should be an interface such as "SortedMap" rather than the implementation "TreeMap".(ñ£†‘ıÿÿÿÿ
+Z
+java:S2147"DCombine this catch with the one at line 28, which has the same body.(É®£
+H
+java:S1905"-Remove this unnecessary cast to "Connection".(Œ·ş—ÿÿÿÿÿ
+:
+java:S1168"$Return an empty map instead of null.(¥¹ï
+:
+java:S1168"$Return an empty map instead of null.(¥¹ï
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(‰—ÿ
+I
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ

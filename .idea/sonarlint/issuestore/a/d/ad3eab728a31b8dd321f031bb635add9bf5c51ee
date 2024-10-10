@@ -1,0 +1,30 @@
+
+}
+java:S1488?"bImmediately return this expression instead of assigning it to the temporary variable "updateRows".(£”²åÿÿÿÿÿ
+a
+java:S1226."FIntroduce a new variable instead of reusing the parameter "resultSet".(Å¥Íóÿÿÿÿÿ
+j
+java:S2095)"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•–©ùÿÿÿÿ
+j
+java:S2095:"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(•–©ùÿÿÿÿ
+t	java:S115
+"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Çâ»Áùÿÿÿÿ
+o	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Ý˜’×
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(“½Öêúÿÿÿÿ
+t	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(ÞãžÝþÿÿÿÿ
+P
+java:S1118	":Add a private constructor to hide the implicit public one.(¯å¥é
+H
+java:S1905"-Remove this unnecessary cast to "Connection".(Ýú†¹ûÿÿÿÿ
+Q
+java:S6437"6Revoke and change this password, as it is compromised.(Ýú†¹ûÿÿÿÿ
+O
+java:S1905)"4Remove this unnecessary cast to "PreparedStatement".(•–©ùÿÿÿÿ
+O
+java:S1905:"4Remove this unnecessary cast to "PreparedStatement".(•–©ùÿÿÿÿ
+X
+java:S1854N"=Remove this useless assignment to local variable "resultSet".(ÅÝÓªþÿÿÿÿ
+[
+java:S1854W"ERemove this useless assignment to local variable "preparedStatement".(ðîáÄ
+T
+java:S1854`">Remove this useless assignment to local variable "connection".(ŽÈØ“
